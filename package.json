@@ -1,0 +1,31 @@
+{
+  "name": "delete-files",
+  "version": "0.1.0",
+  "description": "Asynchronously find and delete files in a folder",
+  "main": "dist/index.js",
+  "repository": "https://github.com/knightjdr/delete-files",
+  "author": "James Knight",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --config build/webpack.config.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^24.7.1",
+    "mock-fs": "^4.9.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.1"
+  }
+}
