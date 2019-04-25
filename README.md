@@ -35,6 +35,9 @@ const options = {
 deleteFiles('/dir', options);
 ```
 
-If a glob is specified and a file/folder does not match, no further options will be checked and the file will not
+If a glob is specified and a file does not match, no further options will be checked and the file will not
 be removed.
 
+## Implementation
+
+The path for the directory to search must be specified with the full path. The age of a file is determined from the `mtime` (last modified). Files and folders are removed with the fs-extra `remove` function which is the equivalent of `rm -rf`.
